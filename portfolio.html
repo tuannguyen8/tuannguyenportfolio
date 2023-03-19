@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="css/portfolio.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<!-- <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="./css/owl.theme.default.min.css" /> -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/a7ebbfc552.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- <script src="js/main.js"></script> -->
+
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init('nLKVKUFVTCqjKXrB3');
+			})();
+		</script>
+
+		<title>My Porfolio</title>
+	</head>
+
+	<body class="body-class">
+		<!-- <div class="more-info">
+			<div class="modal-content">
+				<ul>
+					<li> 
+						<span class="project-span-st">Project: </span> 
+						<span class="project-span-nd"> ${project.name}</span> 
+					</li>
+					<li>
+						<span class="project-span-st">Project Type: </span>
+						<span class="project-span-nd"> ${project.projectType}</span>
+					</li>
+					<li>
+						<span class="project-span-st">Description: </span>
+						<span class="project-span-nd"> ${project.description}</span>
+					</li>
+					<li>
+						<span class="project-span-st">Tech: </span>
+						<span class="project-span-nd">${project.stacks}</span>
+					</li>
+					<li>
+						<span class="project-span-st">Deployment link: </span>
+						<span class="project-span-nd"> ${project.link}</span>
+					</li>
+					
+					
+				</ul>
+				<div class="project-images">
+					<div class="slide owl-carousel owl-theme image-div">
+						<div class="item">
+							<img style="height: 150px; width: 150px" src="./img/currency-exchange-1.PNG" alt="">
+						</div>
+						<div class="item">
+							<img style="height: 150px; width: 150px" src="./img/currency-exchange-2.PNG" alt="">
+						</div>
+						<div class="item">
+							<img style="height: 150px; width: 150px" src="./img/currency-exchange-3.PNG" alt="">
+						</div>
+						<div class="item">
+							<img style="height: 150px; width: 150px" src="./img/currency-exchange-3.PNG" alt="">
+						</div>
+						<div class="item">
+							<img style="height: 150px; width: 150px" src="./img/currency-exchange-3.PNG" alt="">
+						</div>
+
+					</div>
+							
+				</div>
+				<div class="remove-modal">
+					<i class="fas fa-times "></i>
+				</div>
+			</div>
+		</div> -->
+		<!-- <div class="image-details">
+			<div class="image-content">
+				<div class="img-group">
+					<div id="to-left" class=" nav-img nav-img-1">
+						<i class="fa-solid fa-chevron-left"></i>
+					</div>
+					<div class="sing-image">	
+						<img class="img-control" src="./img/currency-exchange-1.PNG" alt="">
+
+					</div>
+					<div id="to-right" class=" nav-img nav-img-2">
+						<i class="fa-solid fa-chevron-right"></i>
+					</div>
+				</div>
+				
+				<div class="remove-img">
+					<i class="fas fa-times "></i>
+				</div>
+			</div>
+		</div> -->
+		<div class="container">
+
+			<div class="totop">
+				<i class="fas fa-arrow-up"></i>
+			</div>
+
+			<div id="mySidenav" class="sidenav">
+				<a href="https://www.linkedin.com/in/tuan-nguyen-158533227/" target="_blank" class="linkedin"
+					><i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span></a
+				>
+				<a href="https://github.com/tuannguyen8" target="_blank" class="github"
+					><i class="fa-brands fa-github"></i><span>Github</span></a
+				>
+				<a href="https://www.facebook.com/shjn.raesoo" target="_blank" class="fb"
+					><i class="fa-brands fa-square-facebook"></i><span>Facebook</span></a
+				>
+				<a href="https://www.instagram.com/TuanNguyen74211/" target="_blank" class="ins"
+					><i class="fa-brands fa-instagram"></i><span>Instagram</span></a
+				>
+				<a href="https://www.youtube.com/channel/UCWoh7_kbBiBZiJ8cbnFIxPQ" target="_blank" class="youtube"
+					><i class="fa-brands fa-square-youtube"></i><span>YouTube</span></a
+				>
+			</div>
+			<header>
+				<div class="header-container">
+					<div class="logo">
+						<a href="">
+							<!-- <h1>Logo</h1> -->
+							<div> <img style="width: 100px;height: 80px; border-radius: 10px;" src="./img/TuanNguyenLogo2.PNG" alt=""></div>
+						</a>
+					</div>
+					<nav>
+						<ul>
+							<li class="flex-nav"><a class="hover" href="#about"> About </a></li>
+							<li class="flex-nav"><a class="hover" href="#experience"> Experience </a></li>
+							<li class="flex-nav"><a class="hover" href="#projects"> Projects </a></li>
+							<li class="flex-nav"><a class="hover" href="#contact"> Contact </a></li>
+
+							<!-- add hamburger icon -->
+							<li class="hamburger">
+								<i class="hamburger-icon fa-solid fa-bars"></i>
+							</li>
+						</ul>
+
+						
+					</nav>
+				</div>
+			</header>
+
+			<div class="body-content">
+				<div class="introduce-content">
+					<div class="div-content">
+						<div>Hello and welcome to my portfolio!</div>
+						<div>I'm Tuan Nguyen</div>
+						<div> My major is computer science.</div>
+						<div>
+							I'm passionate about creating things on the internet and I love 
+							exploring new technologies to bring my ideas to life. Take a look 
+							around and feel free to contact me if you have any questions or 
+							are interested in working together on a project.
+						</div>
+					</div>
+					<a href="/files/resume-feb-23.pdf" download>
+						<button>Check out my resume</button>
+					</a>
+					
+				</div>
+				<div id="about" class="about-content">
+					<!-- <h2>about-content</h2> -->
+
+					<div class="div-content">
+						<div class="text-content">
+							<div class="div-header">
+								<div class="div-header-content">About me</div>
+								<div class="following-line"></div>
+							</div>
+
+							<div class="div-passage">
+								<div class="passage-content"></div>
+
+								<ul class="ul-skills">
+									<!-- <li>JavaScript </li>
+										<li>HTML</li>
+										<li>CSS/SCSS </li>
+										<li>NodeJs </li>
+										<li>Bootstrap </li>
+										<li>ReactJs </li>
+										<li>jQuery</li>
+										<li>MongoDB</li>
+										<li>MySQL</li>
+										<li>Express.js</li>
+										<li>Java</li>
+										<li>C++</li> -->
+								</ul>
+							</div>
+						</div>
+						<div class="img-content">
+							<img src="./img/profile.jpg" alt="Tuan Nguyen's picture" />
+						</div>
+					</div>
+				</div>
+
+				<div id="experience" class="experience-content">
+					<div class="div-content-exp">
+						<div class="div-header-exp">
+							<div class="div-header-content">Work Experience</div>
+							<div class="following-line"></div>
+						</div>
+						<div class="div-text-exp">
+							<div class="div-btn-exp">
+								<!-- <button class="btn-exp">
+									11/2013 - 4/2014
+								</button>
+								<button class="btn-exp">
+									4/2014 - 4/2022
+								</button>
+								<button class="btn-exp">
+									10/2018 - 9/2019
+								</button>
+								<button class="btn-exp">
+									6/2021 - 12/2022
+								</button> -->
+							</div>
+							<div class="text-exp change-exp-content">
+								<div class="exp-company">
+									<a class="heading-company">Company Name: </a>
+									<a class="company-info">Seminaut-Inc</a>
+								</div>
+								<div class="exp-position">
+									<a class="heading-position">Position: </a> <a class="position-info">Software Engineering</a>
+								</div>
+								<div class="exp-des">
+									<a class="heading-description">Description: </a> <a class="des-info">In the software engineering department, we use Python as our primary language for
+		 backend development, and JavaScript with ReactJS for front-end development. As a
+		  software engineer in this department, I am part of a dynamic team of 10 individuals
+		   who meet once a week on Discord to discuss ongoing projects and tasks. I am paired 
+		   with another person, and our tasks are assigned through the ClickUp project 
+		   management tool. I work closely with my partner to complete assigned tasks, 
+		   ensuring that codebase standards are followed in accordance with Seminaut's guidelines. 
+		   Additionally, I have the opportunity to collaborate with other team members and share 
+		   knowledge and expertise. This role requires strong technical skills, as well as the 
+		   ability to communicate effectively and work collaboratively with others.</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="projects" class="projects-content">
+					<div class="div-header-exp">
+						<div class="div-header-content">My Projects</div>
+						<div class="following-line"></div>
+					</div>
+					<div class="project-box">
+						<!-- <div class="a-project">
+							
+							<ul>
+								<li> 
+									<span class="project-span-st">Project: </span> 
+									<span class="project-span-nd">Validates Submitted Datasets</span> </li>
+								<li>
+									<span class="project-span-st">Description: </span>
+									<span class="project-span-nd">This is the final group project of Capstone
+									courses. Creating a Web Portal that supports validating
+									submitted datasets in order to ensure they follow a standard
+									format. Returning a report of errors, if some are present;
+									sends a success message if it's successful.
+									</span>
+								</li>
+								<li>
+									<span class="project-span-st">Tech: </span>
+									<span class="project-span-nd">Python, CSS/SCSS</span>
+								</li>
+							</ul>
+					
+						
+							
+						</div> -->
+
+						<!-- <div class="a-project"></div>
+						<div class="a-project"></div>
+						<div class="a-project"></div> -->
+					</div>
+				</div>
+
+				<div id="contact" class="contact-content">
+					<div class="div-content-contact">
+						<div class="div-header-exp">
+							<div class="div-header-content">Contact to me!!</div>
+							<div class="following-line"></div>
+						</div>
+
+						<div class="div-form">
+							<div class="form-group">
+								<input
+									type="text"
+									id="name"
+									placeholder="Enter your Name"
+									required
+								/>
+							</div>
+							<div class="form-group">
+								<input
+									type="email"
+									id="email"
+									placeholder="Enter your Email"
+									required
+								/>
+							</div>
+							<div class="form-group">
+								<input
+									type="text"
+									id="subject"
+									placeholder="Enter the Subject of Email"
+									required
+								/>
+							</div>
+							<div class="email-area">
+								<div class="form-group">
+									<textarea
+										class="text-contact"
+										id="message"
+										rows="12"
+										required
+									>
+									</textarea>
+								</div>
+								<div>
+									<button class="btn-contact" onClick="sendMail()">Send</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="following-line"></div> -->
+
+
+				</div>
+				
+			</div>
+			<footer class="footer-content">
+				<div class="div-footer">
+					<div class="personal-info">
+						<div class="a-contact">
+							<a href="#" class="address">
+								<i class="fa-solid fa-location-dot"></i>
+								<span>Portland, Oregon 97236</span>
+							</a>
+						</div>
+						<div class="a-contact">
+							<a href="#" class="number">
+								<i class="fa-solid fa-phone"></i>
+								<span>503 841 8844</span>
+							</a>
+						</div>
+						<div class="a-contact">
+							<a href="#" class="email">
+								<i class="fa-regular fa-envelope"></i>
+								<span>nguyenvutuan1@gmail.com</span>
+							</a>
+						</div>
+					</div>
+					<div class="net-work">
+						<div class="a-contact">
+							<a href="https://direct.me/tuannguyen" target="_blank" class="directme">
+								<i class="fa-solid fa-link directme"></i>
+								<span>Direct.me</span>
+							</a>
+						</div>
+
+						<div class="a-contact">
+							<a href="https://www.linkedin.com/in/tuan-nguyen-158533227/" target="_blank" class="linkedin">
+								<i class="fa-brands fa-linkedin"></i>
+								<span>LinkedIn</span>
+							</a>
+						</div>
+						<div class="a-contact">
+							<a href="https://github.com/tuannguyen8" target="_blank" class="github"
+								><i class="fa-brands fa-github"></i><span>Github</span></a
+							>
+						</div>
+					</div>
+
+					<div class="social">
+						<div class="a-contact">
+							<a href="https://www.facebook.com/shjn.raesoo" target="_blank" class="fb"
+								><i class="fa-brands fa-square-facebook"></i
+								><span>Facebook</span></a
+							>
+						</div>
+						<div class="a-contact">
+							<a href="https://www.instagram.com/tuannguyen74211/" target="_blank" class="ins"
+								><i class="fa-brands fa-instagram"></i
+								><span>Instagram</span></a
+							>
+						</div>
+
+						<div class="a-contact">
+							<a href="https://www.youtube.com/channel/UCWoh7_kbBiBZiJ8cbnFIxPQ" target="_blank" class="youtube"
+								><i class="fa-brands fa-square-youtube"></i
+								><span>YouTube</span></a
+							>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="js/portfolio.js"></script>
+	<!-- <script src="js/owl.carousel.min.js"></script>
+	<script src="js/owlcarousel.js"></script> -->
+	
+	
+</html>
