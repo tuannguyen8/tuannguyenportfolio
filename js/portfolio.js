@@ -5,6 +5,7 @@ let aboutMe = {
 	para4: `Here are a few technologies I've been working with recently: JavaScript, HTML, CSS/SCSS, NodeJs, jQuery, MongoDB, MySQL, Express.js, Java, C++`,
 };
 let workingExp = [
+
 	{
         id: 5555,
 		company: 'Seminaut-Inc',
@@ -20,6 +21,18 @@ let workingExp = [
 		   Additionally, I have the opportunity to collaborate with other team members and share 
 		   knowledge and expertise. This role requires strong technical skills, as well as the 
 		   ability to communicate effectively and work collaboratively with others.`,
+	},
+	{
+        id: 6666,
+		company: 'ATAX',
+		position: 'Taxpreparer',
+		timeline: '01/2023 - Current',
+		des: `The duties of a tax preparer include gathering and organizing financial information,
+		 preparing and filing accurate tax returns, and addressing clients' tax-related concerns.
+		  Compliance with tax laws and regulations, identification of opportunities for tax
+		   savings, and provision of exceptional customer service are also key responsibilities. 
+		   The main objective of a tax preparer is to offer efficient and effective tax 
+		   preparation services that cater to clients' requirements.`,
 	},
 	{
         id: 2222,
@@ -262,7 +275,7 @@ const renderAboutMe = (aboutMe) => {
 };
 
 ///////////////////////////////////////////////////////////////////////////////
-//experience
+//reset experience
 const resetJobExperience = () =>{
     $('.text-exp').empty();
 };
@@ -301,19 +314,31 @@ const renderJobTimelineBtn = (workingExp) => {
 				${job.timeline}
 			</button>
         `);
-        
+		
+		//make default the first button have active class
+        $('.div-btn-exp .btn-exp:first-child').addClass('active');
 	});
 };
 
+
+
 //display content of working exp after click the job btn-exp button.
 $(document).on("click", ".btn-exp", function(e){
-    
-    //console.log(e.target.id);
+
+	//remove all "active" classes in many "btn-exp" buttons.
+	$('.btn-exp').removeClass('active');
+
+    //add the active class to the button that is clicked
+	e.target.classList.add("active");
+
+	//remove all current content in the job exp div
     resetJobExperience();
+
+	//add new content for the job exp div
     workingExp.forEach((job) => {
         //console.log(job.id);
         if(e.target.id === job.id.toString()){
-            console.log("matching")
+            //console.log("matching")
             $('.change-exp-content').append(`
                 <div class="exp-company">
                     <a class="heading-company">Company Name: </a> <a class="company-info">${job.company}</a>

@@ -1,8 +1,12 @@
-$base-color: #112238;
-$secondary-color: #64ffda;
-$hover-color: #e6f1ff;
+// $base-color: #112238;
+$base-color: linear-gradient(45deg, rgba(27,107,179,1) 0%, rgba(20,73,142,1) 24%, rgba(4,20,52,1) 91%, rgba(18,22,31,1) 100%); 
+// $base-color: linear-gradient(210deg, rgba(8,4,86,1) 0%, rgba(21,23,149,0.7008053221288515) 84%, rgba(21,167,197,1) 100%);
+// $secondary-color: #64ffda;
+$secondary-color: palevioletred;
+// $hover-color: #e6f1ff;
+$hover-color: #d0d9e1;
 // $secondary-color: red;
-
+$modal-background: palevioletred;
 html {
   scroll-behavior: smooth;
 }
@@ -15,7 +19,7 @@ body {
     top: 0;
     left: 0;
     z-index: 100;
-    background: rgba(51, 51, 51, 0.8);
+    background: $base-color;
     background-color: $base-color;
     width: 100vw;
     
@@ -24,7 +28,7 @@ body {
             display: none;
         }
         overflow: scroll;
-        background-color: green;
+        background-color: #069470;
         border-radius: 10px;
         height: 55vh;
         position: absolute;
@@ -93,7 +97,7 @@ body {
                         cursor: pointer;
                         margin: auto;
                         border-radius: 5px;
-                        border: 1px solid $secondary-color;
+                        border: 2px solid $secondary-color;
                     }
                     img:nth-child(1){
                         position: absolute;
@@ -135,15 +139,16 @@ body {
     top: 0;
     left: 0;
     z-index: 100;
-    background: rgba(51, 51, 51, 0.8);
-    background-color: $base-color;
+    background: $base-color;
+    //background-color: $base-color;
     width: 100vw;
     .image-content{
         &::-webkit-scrollbar {
             display: none;
         }
+        padding: 100px 0px 100px 0px;
         overflow: scroll;
-        background-color: green;
+        background-color: #069470;
         border-radius: 10px;
         height: 400px;
         position: absolute;
@@ -178,9 +183,9 @@ body {
                 }
                 .imgCount{
                     position: absolute;
-                    bottom: 0;
+                    top: -20px;
                     left: 50%;
-                    color: white;
+                    color: #112238;
                 }
             }
 
@@ -194,11 +199,10 @@ body {
                 cursor: pointer;
                 
                 i{
-
                     display: flex;
                     margin: auto;
+                    font-size: 22px;
                     color: $base-color;
-                    background-color:$secondary-color;
                 }
             }
             .nav-img-2{
@@ -211,8 +215,8 @@ body {
                 i{
                     display: flex;
                     margin: auto;
+                    font-size: 22px;
                     color: $base-color;
-                    background-color:$secondary-color;
                 }
             }
         }
@@ -251,7 +255,7 @@ body{
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: white;
+            background: #64ffda;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             i{
                 font-size: 30px;
@@ -277,29 +281,30 @@ body{
                 transition: 0.3s;
                 padding: 10px;
                 width: 100px;
-                text-decoration: none;
+                //text-decoration: none;
                 font-size: 14px;
-                color: white;
                 border-radius: 0 5px 5px 0;
+                background-color: #64ffda;
                 i{
-                    color: white;
+                    color: #053a2d;
                     margin-right: 10px;
                     font-size: 24px;
                 }
                 span{
-                    color: white;
+                    color: #053a2d;
                     font-weight: 600;
                 }
                 &:hover{          
                     right: 0;
-                    background: rgba(100,255,218,0.1);
+                    background: $secondary-color;
                     //background: $secondary-color;
                     i{
                         //color: $secondary-color;
-                        color: $secondary-color;
+                        color: $base-color;
                     }
                     span{
-                        color: $secondary-color;
+                        color: $base-color;
+                        font-weight: 900;
                     }
                 }
 
@@ -307,27 +312,22 @@ body{
 
             .linkedin {
                 top: 200px;
-                background-color: #33363b;
             }
 
             .github {
                 top: 255px;
-                background-color: #33363b;
             }
 
             .fb {
                 top: 310px;
-                background-color: #33363b;
             }
 
             .ins {
                 top: 365px;
-                background-color: #33363b;
             }
 
             .youtube {
                 top: 420px;
-                background-color: #33363b;
             }
 
         }
@@ -336,7 +336,7 @@ body{
             width: 100vw;
             padding-top: 10px;
             padding-bottom: 10px;
-            border-bottom:1px solid #e6f1ff;
+            border-bottom:2px solid #75e9cc;
             .header-container{
                 margin: 10px 20px 10px 20px;
                 //margin-right: 20px;
@@ -357,6 +357,7 @@ body{
                         
                     }
                 }
+
                 nav{
                     margin-right: 70px;
                     @media  screen and (max-width: 750px) {
@@ -368,7 +369,7 @@ body{
                         .flex-nav{
                             margin-left: 50px;
                             a{
-                                color: #e6f1ff;
+                                color: #64ffda;
                                 font-size: 24px;
                                 &:hover{
                                     color: $secondary-color;
@@ -384,29 +385,41 @@ body{
                             position: relative;
                             margin-right: 10px;
                             font-size: 36px;
-                            
-
-                            ul{
-                                display: block;
-                                position: absolute;
-                                z-index: 4;
-                                top: 5px;
-                                left: -130px;
-                                background-color: #e6f1ff;
-                                color: #112238;
-                                padding: 5px;
-                                border-radius: 5px;
-                                li{
-                                    margin: 5px;
-                                    background-color: #64ffda;
-                                    padding: 2px;
-                                    border-radius: 2px;
-                                    font-size: 16px;
-                                    &:hover{
-                                        background-color: yellow;
+                            cursor: pointer;
+                            .hamburger-icon{
+                                color: #64ffda;
+                                .hamburger-append{
+                                    display: block;
+                                    position: absolute;
+                                    z-index: 4;
+                                    top: 5px;
+                                    left: -130px;
+                                    background: #64ffda;
+                                    //color: #112238;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                    height: 115px;
+                                    width: 120px;
+                                    
+                                    li{
+                                        margin: 5px;
+                                        padding: 2px;
+                                        border-radius: 2px;
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                        //color: red;
+                                        a{
+                                            color:#112238;
+                                        }
+                                        &:hover{
+                                            background-color: $secondary-color;
+                                            a{
+                                                color: #ccd6f6;
+                                            }
+                                        }
                                     }
+                                    
                                 }
-                                
                             }
                             @media  screen and (max-width: 750px) {
                                 display: block;
@@ -487,8 +500,8 @@ body{
                     padding: 10px 5px;
                     border-radius: 5px;
                     &:hover{
-                        background-color: $hover-color;
-                        color: $base-color;
+                        background-color: $secondary-color;
+                        color: $hover-color;
                         
                     }
                 }
@@ -526,11 +539,12 @@ body{
                             margin-bottom: 1vw;
                             .div-header-content{
                                 font-size: 24px;
+                                color: $secondary-color;
                             }
                             .following-line{
                                 height: 1px;
                                 width: 70%;
-                                background-color: #e6f1ff;
+                                background-color: $secondary-color;
                             }
                         }
                         .div-passage{
@@ -550,13 +564,12 @@ body{
                                     margin: 5px 10px 5px 0px;
                                     padding: 3px 5px;
                                     //background-color: $secondary-color;
-                                    border: $secondary-color solid 1px;
+                                    border: $secondary-color solid 2px;
                                     border-radius: 3px;
                                     cursor: pointer;
                                     &:hover{
-                                        background: $hover-color;
-                                        color: $base-color;
-                                        //background: rgba(100,255,218,0.1);
+                                        background-color: $secondary-color;
+                                        color: $hover-color;
                                     }
                                 }
                             }
@@ -603,16 +616,18 @@ body{
                         margin-bottom: 1vw;
                         .div-header-content{
                             font-size: 24px;
+                            color: $secondary-color;
                         }
                         .following-line{
                             height: 1px;
                             width: 70%;
-                            background-color: #e6f1ff;
+                            background-color: $secondary-color;
                         }
                     }
                     .div-text-exp{
                         display: flex;
                         justify-content: space-between;
+                        
                         .div-btn-exp{
                             margin-right: 60px;
                             display: flex;
@@ -628,20 +643,22 @@ body{
                                 padding: 10px 5px;
                                 border-radius: 5px;
                                 &:hover{
-                                    background-color: $hover-color;
-                                    color: $base-color;
-                                    
+                                    background-color: $secondary-color;
+                                    color: $hover-color;
                                 }
                             }
-                            // .active{
-                            //     background-color: $secondary-color;
-                            //     color: $base-color;
-                            // }
+                            .active{
+                                background-color: #e6f1ff;
+                                color: #112238;
+                                //border: 2px solid #112238;
+                            }
                         }
                         .text-exp{
+                            
+                            // border: solid 1px $secondary-color;
                             width: 60%;
                             font-size: 16px;
-                            padding: 0px 5px 5px 5px;
+                            padding: 5px 5px 5px 5px;
                             display: block;
                             //margin-bottom: 10px;
                             color: #8892b0;
@@ -686,11 +703,12 @@ body{
                     margin-bottom: 1vw;
                     .div-header-content{
                         font-size: 24px;
+                        color: $secondary-color;
                     }
                     .following-line{
                         height: 1px;
                         width: 70%;
-                        background-color: #e6f1ff;
+                        background-color: $secondary-color;
                     }
                 }
                 .project-box{
@@ -722,9 +740,9 @@ body{
                         }
                         padding: 3px;
                         overflow: scroll;
-                        background-color: #112238;
+                        background-color: $base-color;
                         border-radius: 5px;
-                        border: solid 2px #64ffda;
+                        border: solid 2px $secondary-color;
                         margin: 10px;
                         width: 25%;
                         height: 35vh;
@@ -772,7 +790,7 @@ body{
                         justify-content: center;
                         align-items: center;
                         .div-header-content{
-                            color: #ccd6f6;
+                            color: $secondary-color;
                             font-size: 24px;
                             display: flex;
                             justify-content: space-between;
@@ -783,7 +801,7 @@ body{
                         .following-line{
                             height: 1px;
                             width: 70%;
-                            background-color: #e6f1ff;
+                            background-color: $secondary-color;
                         }
                     
                     }
@@ -795,7 +813,7 @@ body{
                             input{
                                 
                                 padding: 5px 10px;
-                                border: $secondary-color 1px solid;
+                                border: #64ffda 2px solid;
                                 color: $secondary-color;
                                 border-radius: 5px;
                                 display: block;
@@ -820,6 +838,7 @@ body{
                                     color: $base-color;
                                     padding: 5px 10px;
                                     margin: 10px;
+                                    border: 2px solid #64ffda;
                                 }
                             }
                             
@@ -831,10 +850,11 @@ body{
                                     padding: 5px 10px;
                                     cursor: pointer;
                                     border-radius: 5px;
-                                    border:$secondary-color 1px solid;
+                                    border:$secondary-color 2px solid;
+                                    font-size: 16px;
                                     &:hover{
-                                        background-color: $hover-color;
-                                        color: $base-color;
+                                        background-color: $secondary-color;
+                                        color: $hover-color;
                                     }
                                 }
                             }
@@ -857,7 +877,7 @@ body{
         }
 
         .footer-content{
-            border-top: 1px solid #e6f1ff;
+            border-top: 2px solid #75e9cc;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -939,7 +959,6 @@ body{
 
     }
 }
-
 
 
 
