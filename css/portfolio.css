@@ -297,7 +297,6 @@ body .container .totop:hover {
 body .container .sidenav a {
   position: fixed;
   z-index: 4;
-  right: -80px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   padding: 10px;
@@ -305,6 +304,24 @@ body .container .sidenav a {
   font-size: 14px;
   border-radius: 0 5px 5px 0;
   background-color: #64ffda;
+}
+
+@media screen and (min-width: 0px) {
+  body .container .sidenav a {
+    right: -75px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body .container .sidenav a {
+    right: -70px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body .container .sidenav a {
+    right: -80px;
+  }
 }
 
 body .container .sidenav a i {
