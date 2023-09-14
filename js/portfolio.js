@@ -5,7 +5,7 @@ let aboutMe = {
 	para4: `Here are a few technologies I've been working with recently: JavaScript, HTML, CSS/SCSS, NodeJs, jQuery, MongoDB, MySQL, Express.js, Java, C++`,
 };
 let workingExp = [
-
+	
 	{
         id: 5555,
 		company: 'Seminaut-Inc',
@@ -23,10 +23,22 @@ let workingExp = [
 		   ability to communicate effectively and work collaboratively with others.`,
 	},
 	{
+		id: 7777,
+		company: 'Columbia Gorge Inn, Cascasde Locks, OR, USA',
+		position: 'Manager Assistant',
+		timeline: '04/2023 - Current',
+		des: `Assisted in managing day-to-day operations of the motel, including check-ins, check-outs, and guest inquiries.
+Coordinated with housekeeping and maintenance teams to ensure rooms were clean, well-maintained, and ready for guest arrivals.
+Accurately processed reservations, billing, and payments, maintaining financial records and adhering to cash-handling procedures.
+Acted as a point of contact for guest requests and concerns, resolving issues promptly and courteously.
+Collaborated with the manager to enforce motel policies and maintain compliance with industry regulations.`,
+	},
+
+	{
         id: 6666,
 		company: 'ATAX',
 		position: 'Taxpreparer',
-		timeline: '01/2023 - Current',
+		timeline: '01/2023 - 04/2023',
 		des: `The duties of a tax preparer include gathering and organizing financial information,
 		 preparing and filing accurate tax returns, and addressing clients' tax-related concerns.
 		  Compliance with tax laws and regulations, identification of opportunities for tax
@@ -112,8 +124,8 @@ are present; sends a success message if it's successful`,
 		link: `https://tuannguyen8.github.io/frontend_project_Riode_website/`,
 		img: [
 			`./img/riode-web.PNG`,
-			`./img/currency-exchange-2.PNG`,
-			`./img/currency-exchange-3.PNG`,
+			`./img/riode-web2.PNG`,
+			`./img/riode-web3.PNG`,
 		],
 		description: `This is my personal frontend commercial web project. Using HTML, SCSS, JavaScript, jQuery and some
 libraries to create a commercial website.`
@@ -144,9 +156,9 @@ the top change in a week, month.`
 		timeline: "Jun 2021 - Dec 2021",
 		link: `https://github.com/tuannguyen8/bookapp`,
 		img: [
-			`./img/currency-exchange-1.PNG`,
-			`./img/currency-exchange-2.PNG`,
-			`./img/currency-exchange-3.PNG`,
+			`./img/book-app-1.PNG`,
+			`./img/book-app-2.PNG`,
+			`./img/book-app-2.PNG`,
 		],
 		description: `This is my personal back-end bookapp application project.
 		 Using MongoDB, Express, NodeJS, and some libraries to create the back-end for the app that has authentication features (login, register, change passwords, forgot password), and allows the user to create books, get books, delete books,...`
@@ -162,7 +174,7 @@ the top change in a week, month.`
 		img: [
 			`./img/word-jumbler-1.PNG`,
 			`./img/word-jumbler.PNG`,
-			`./img/currency-exchange-3.PNG`,
+			`./img/word-jumbler.PNG`,
 		],
 		description: `This is the final group project of Capstone courses. Creating a Web Portal that supports validating
 submitted datasets in order to ensure they follow a standard format. Returning a report of errors, if some
@@ -194,8 +206,8 @@ are present; sends a success message if it's successful`
 		timeline: "Sep 2021 - Dec 2021",
 		link: `https://github.com/trilq142/Project-CS410P-Rust-Spring2021/tree/main/gomoku_ai`,
 		img: [
-			`./img/currency-exchange-1.PNG`,
 			`./img/gomoku.PNG`,
+			`./img/gomoku1.PNG`,
 			`./img/gomoku1.PNG`,
 		],
 		description: `This is the final group project of Capstone courses. Creating a Web Portal that supports validating
