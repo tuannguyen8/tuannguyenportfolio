@@ -5,11 +5,11 @@ let aboutMe = {
 	para4: `Here are a few technologies I've been working with recently: JavaScript, HTML, CSS/SCSS, NodeJs, jQuery, MongoDB, MySQL, Express.js, Java, C++`,
 };
 let workingExp = [
-	
+
 	{
         id: 5555,
 		company: 'Seminaut-Inc',
-		position: 'Software Engineering',
+		position: 'Junior Web Developer',
 		timeline: '02/2023 - Current',
 		des: `In the software engineering department, we use Python as our primary language for
 		 backend development, and JavaScript with ReactJS for front-end development. As a
@@ -33,32 +33,6 @@ Accurately processed reservations, billing, and payments, maintaining financial 
 Acted as a point of contact for guest requests and concerns, resolving issues promptly and courteously.
 Collaborated with the manager to enforce motel policies and maintain compliance with industry regulations.`,
 	},
-
-	{
-        id: 6666,
-		company: 'ATAX',
-		position: 'Taxpreparer',
-		timeline: '01/2023 - 04/2023',
-		des: `The duties of a tax preparer include gathering and organizing financial information,
-		 preparing and filing accurate tax returns, and addressing clients' tax-related concerns.
-		  Compliance with tax laws and regulations, identification of opportunities for tax
-		   savings, and provision of exceptional customer service are also key responsibilities. 
-		   The main objective of a tax preparer is to offer efficient and effective tax 
-		   preparation services that cater to clients' requirements.`,
-	},
-	{
-        id: 2222,
-		company: 'Thien Hong Restaurant',
-		position: 'Helper in Kitchen',
-		timeline: '04/2014 - 04/2022',
-		des: `Assisting the chefs and other kitchen staff with food preparation. Cleaning and 
-		sanitizing kitchen equipment, utensils, and work areas. Stocking and organizing ingredients
-		 and supplies. Running errands as needed such as fetching items from storage. Helping to
-		  keep the kitchen organized and running smoothly. Assisting with basic food preparation 
-		  tasks such as washing vegetables, cutting meats and making sauces. Helping to 
-		  maintain a safe and clean working environment. Following food safety guidelines and 
-		  regulations.`,
-	},
 	{
         id: 4444,
 		company: 'Portland Open Data',
@@ -73,6 +47,33 @@ Collaborated with the manager to enforce motel policies and maintain compliance 
 		efficient code using languages such as HTML, CSS, and JavaScript building reusable code for future 
 		use. Troubleshooting and debugging issues as they arise.`,
 	},
+
+	{
+        id: 6666,
+		company: 'ATAX',
+		position: 'Taxpreparer',
+		timeline: '01/2023 - 04/2023',
+		des: `The duties of a tax preparer include gathering and organizing financial information,
+		 preparing and filing accurate tax returns, and addressing clients' tax-related concerns.
+		  Compliance with tax laws and regulations, identification of opportunities for tax
+		   savings, and provision of exceptional customer service are also key responsibilities. 
+		   The main objective of a tax preparer is to offer efficient and effective tax 
+		   preparation services that cater to clients' requirements.`,
+	},
+	
+	{
+        id: 2222,
+		company: 'Thien Hong Restaurant',
+		position: 'Kitchen Assistant ',
+		timeline: '04/2014 - 04/2022',
+		des: `Assisting the chefs and other kitchen staff with food preparation. Cleaning and 
+		sanitizing kitchen equipment, utensils, and work areas. Ordering supplies and ingredients
+		 as needed and maintaining inventory levels. Maintaining kitchen equipment and ensuring it is in good working order. Monitoring food
+		  waste and implementing strategies to reduce waste. Ensuring compliance with health and safety regulations and standards. Helping to 
+		  maintain a safe and clean working environment. Following food safety guidelines and 
+		  regulations.`,
+	},
+	
 	{
         id: 3333,
 		company: 'Uber',
@@ -214,6 +215,7 @@ are present; sends a success message if it's successful`
 submitted datasets in order to ensure they follow a standard format. Returning a report of errors, if some
 are present; sends a success message if it's successful`
 	}
+	
 
 ];
 let contact = [
