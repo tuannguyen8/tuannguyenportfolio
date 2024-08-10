@@ -26,7 +26,7 @@ let workingExp = [
 		id: 7777,
 		company: 'Columbia Gorge Inn, Cascasde Locks, OR, USA',
 		position: 'Manager Assistant',
-		timeline: '04/2023 - Current',
+		timeline: '04/2022 - 02/2023',
 		des: `Assisted in managing day-to-day operations of the motel, including check-ins, check-outs, and guest inquiries.
 Coordinated with housekeeping and maintenance teams to ensure rooms were clean, well-maintained, and ready for guest arrivals.
 Accurately processed reservations, billing, and payments, maintaining financial records and adhering to cash-handling procedures.
@@ -49,29 +49,12 @@ Collaborated with the manager to enforce motel policies and maintain compliance 
 	},
 
 	{
-        id: 6666,
-		company: 'ATAX',
-		position: 'Taxpreparer',
-		timeline: '01/2023 - 04/2023',
-		des: `The duties of a tax preparer include gathering and organizing financial information,
-		 preparing and filing accurate tax returns, and addressing clients' tax-related concerns.
-		  Compliance with tax laws and regulations, identification of opportunities for tax
-		   savings, and provision of exceptional customer service are also key responsibilities. 
-		   The main objective of a tax preparer is to offer efficient and effective tax 
-		   preparation services that cater to clients' requirements.`,
-	},
-	
-	{
         id: 2222,
 		company: 'Thien Hong Restaurant',
 		position: 'Kitchen Assistant ',
 		timeline: '04/2014 - 04/2022',
-		des: `Assisting the chefs and other kitchen staff with food preparation. Cleaning and 
-		sanitizing kitchen equipment, utensils, and work areas. Ordering supplies and ingredients
-		 as needed and maintaining inventory levels. Maintaining kitchen equipment and ensuring it is in good working order. Monitoring food
-		  waste and implementing strategies to reduce waste. Ensuring compliance with health and safety regulations and standards. Helping to 
-		  maintain a safe and clean working environment. Following food safety guidelines and 
-		  regulations.`,
+		des: `Ordering supplies and ingredients as needed and maintaining inventory levels. Maintaining kitchen equipment and ensuring it is in good working order. Monitoring food waste and implementing strategies to reduce waste.
+		Ensuring compliance with health and safety regulations and standards.`,
 	},
 	
 	{
