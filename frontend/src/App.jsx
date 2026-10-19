@@ -3,6 +3,7 @@ import { Link, Route, Routes, useLocation } from 'react-router-dom';
 import Header from './components/Header.jsx';
 import HomePage from './pages/HomePage.jsx';
 import ProjectsPage from './pages/ProjectsPage.jsx';
+import ProjectDetailsPage from './pages/ProjectDetailsPage.jsx';
 
 export default function App() {
   const { pathname, hash } = useLocation();
@@ -31,6 +32,10 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route
+            path="/projects/:projectId"
+            element={<ProjectDetailsPage />}
+          /> 
 
           <Route
             path="*"
