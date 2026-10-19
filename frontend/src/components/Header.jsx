@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,13 +25,13 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="page-container site-header__inner">
-        <a
+        <Link
           className="site-header__brand"
           href="#top"
           onClick={() => setMenuOpen(false)}
         >
           Tuan Nguyen
-        </a>
+        </Link>
 
         <button
           ref={menuButtonRef}
@@ -51,9 +52,9 @@ export default function Header() {
           }`}
           aria-label="Main navigation"
         >
-          <a href="#projects" onClick={() => setMenuOpen(false)}>
+          <Link to="/#projects" onClick={() => setMenuOpen(false)}>
             Work
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

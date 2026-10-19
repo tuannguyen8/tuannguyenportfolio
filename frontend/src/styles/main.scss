@@ -309,3 +309,24 @@ h3 {
     transition: none;
   }
 }
+
+.projects-section__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-bottom: 24px;
+}
+
+.section-heading h1 {
+  margin-top: 10px;
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
