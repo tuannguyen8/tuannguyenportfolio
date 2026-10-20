@@ -69,27 +69,24 @@ export default function Header() {
 					}`}
 					aria-label="Main navigation"
 				>
-					<Link
-					to="/#projects"
-					onClick={() => handleSectionClick('projects')}
-					>
-					Work
+					<Link to="/#projects" onClick={() => handleSectionClick('projects')}>
+						Work
+					</Link>
+
+					<Link to="/#about" onClick={() => handleSectionClick('about')}>
+						About
 					</Link>
 
 					<Link
-					to="/#about"
-					onClick={() => handleSectionClick('about')}
+						to="/#experience"
+						onClick={() => handleSectionClick('experience')}
 					>
-					About
+						Experience
 					</Link>
 
-					<Link
-					to="/#experience"
-					onClick={() => handleSectionClick('experience')}
-					>
-					Experience
+					<Link to="/#contact" onClick={() => handleSectionClick('contact')}>
+						Contact
 					</Link>
-
 				</nav>
 			</div>
 		</header>

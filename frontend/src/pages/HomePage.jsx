@@ -4,6 +4,8 @@ import { projects } from '../data/projects.js';
 import About from '../components/About.jsx';
 import Experience from '../components/Experience.jsx';
 import Education from '../components/Education.jsx';
+import Contact from '../components/Contact.jsx';
+
 
 export default function HomePage() {
 	const featuredProjects = projects.filter((project) => project.featured);
@@ -53,6 +55,7 @@ export default function HomePage() {
 			<About />
       <Experience />
       <Education />
+      <Contact />
 		</>
 	);
 }
