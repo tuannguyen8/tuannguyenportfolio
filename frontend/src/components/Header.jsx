@@ -7,12 +7,12 @@ export default function Header() {
 
 	const { pathname } = useLocation();
 
-	function handleWorkClick() {
+	function handleSectionClick(sectionId) {
 		setMenuOpen(false);
 
 		if (pathname === '/') {
 			requestAnimationFrame(() => {
-				document.getElementById('projects')?.scrollIntoView({
+				document.getElementById(sectionId)?.scrollIntoView({
 					behavior: 'auto',
 					block: 'start',
 				});
@@ -69,9 +69,27 @@ export default function Header() {
 					}`}
 					aria-label="Main navigation"
 				>
-                    <Link to="/#projects" onClick={handleWorkClick}>
-                    Work
-                    </Link>
+					<Link
+					to="/#projects"
+					onClick={() => handleSectionClick('projects')}
+					>
+					Work
+					</Link>
+
+					<Link
+					to="/#about"
+					onClick={() => handleSectionClick('about')}
+					>
+					About
+					</Link>
+
+					<Link
+					to="/#experience"
+					onClick={() => handleSectionClick('experience')}
+					>
+					Experience
+					</Link>
+
 				</nav>
 			</div>
 		</header>
