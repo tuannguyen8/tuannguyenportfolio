@@ -843,3 +843,133 @@ h3 {
     }
   }
 }
+
+.education-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  gap: 48px;
+  padding-block: 40px 56px;
+  border-top: 1px solid var(--color-border);
+
+  &__heading h2 {
+    max-width: 18ch;
+    margin-top: 12px;
+    font-size: clamp(28px, 3vw, 38px);
+    letter-spacing: -0.03em;
+  }
+
+  &__content {
+    min-width: 0;
+  }
+
+  &__degree {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+
+    h3 {
+      font-size: 22px;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  &__gpa {
+    margin-top: 10px;
+    margin-bottom: 28px;
+    font-size: 14px;
+  }
+
+  &__minor {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  &__coursework {
+    margin-top: 28px;
+    border-top: 1px solid var(--color-border);
+
+    > summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 56px;
+      padding-block: 12px;
+      cursor: pointer;
+      list-style: none;
+      font-size: 14px;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &::after {
+        content: '+';
+        font-size: 24px;
+        line-height: 1;
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--color-text);
+        outline-offset: 4px;
+      }
+    }
+
+    &[open] > summary::after {
+      content: '−';
+    }
+  }
+
+  &__coursework-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    padding-block: 12px 20px;
+
+    h3 {
+      margin-bottom: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      line-height: 1.6;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    li {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .education-section {
+    grid-template-columns: 1fr;
+    gap: 28px;
+
+    &__heading h2 {
+      max-width: none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .education-section__coursework-grid {
+    grid-template-columns: 1fr;
+  }
+}
