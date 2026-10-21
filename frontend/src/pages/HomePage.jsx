@@ -5,6 +5,7 @@ import About from '../components/About.jsx';
 import Experience from '../components/Experience.jsx';
 import Education from '../components/Education.jsx';
 import Contact from '../components/Contact.jsx';
+import { contact } from '../data/contact.js';
 
 
 export default function HomePage() {
@@ -25,9 +26,23 @@ export default function HomePage() {
 					Web applications, APIs, and automation — built with care.
 				</p>
 
-				<a className="button" href="#projects">
+				{/* <a className="button" href="#projects">
 					View selected work <span aria-hidden="true">↘</span>
-				</a>
+				</a> */}
+
+        <div className="hero__actions">
+          <a className="button" href="#projects">
+            View selected work <span aria-hidden="true">↘</span>
+          </a>
+
+          <a
+            className="hero__resume"
+            href={contact.resumeUrl}
+            download="Tuan_Nguyen_Resume.pdf"
+          >
+            Download resume <span aria-hidden="true">↗</span>
+          </a>
+        </div>        
 			</section>
 
 			<section

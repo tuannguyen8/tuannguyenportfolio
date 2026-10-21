@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { contact } from '../data/contact.js';
 
 export default function Header() {
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -87,6 +88,15 @@ export default function Header() {
 					<Link to="/#contact" onClick={() => handleSectionClick('contact')}>
 						Contact
 					</Link>
+
+					<a
+					className="button header-resume"
+					href={contact.resumeUrl}
+					download="Tuan_Nguyen_Resume.pdf"
+					onClick={() => setMenuOpen(false)}
+					>
+					Resume <span aria-hidden="true">↗</span>
+					</a>
 				</nav>
 			</div>
 		</header>
