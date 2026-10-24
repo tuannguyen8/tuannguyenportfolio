@@ -58,31 +58,12 @@ export default function Contact() {
 			aria-labelledby="contact-title"
 		>
 			<div className="contact-section__information">
-				<p className="eyebrow">Get in touch</p>
+				<p className="eyebrow">Contact</p>
 
 				<h2 id="contact-title">{contact.heading}</h2>
 
 				<p className="contact-section__introduction">{contact.introduction}</p>
 
-				<a href={`mailto:${contact.email}`}>{contact.email}</a>
-
-				<a href={contact.phone.href}>{contact.phone.label}</a>
-
-				<p className="contact-section__location">{contact.location}</p>
-
-				<div className="contact-section__socials">
-					{contact.socialLinks.map((link) => (
-						<a
-							key={link.label}
-							href={link.url}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							{link.label}
-							<span aria-hidden="true"> ↗</span>
-						</a>
-					))}
-				</div>
 			</div>
 
 			<form
@@ -132,7 +113,7 @@ export default function Contact() {
 					<textarea
 						id="contact-message"
 						name="message"
-						rows={6}
+						rows={3}
 						required
 						maxLength={6000}
 					/>

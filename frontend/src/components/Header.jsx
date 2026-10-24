@@ -41,14 +41,14 @@ export default function Header() {
 	return (
 		<header className="site-header">
 			<div className="page-container site-header__inner">
+
 				<Link
 					className="site-header__brand"
-					href="#top"
-					onClick={() => setMenuOpen(false)}
+					to="/#top"
+					onClick={() => handleSectionClick('top')}
 				>
 					Tuan Nguyen
 				</Link>
-
 				<button
 					ref={menuButtonRef}
 					className="site-header__menu-button"

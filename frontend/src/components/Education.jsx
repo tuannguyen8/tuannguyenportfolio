@@ -23,12 +23,17 @@ const courseworkGroups = [
 export default function Education() {
 	return (
 		<section className="education-section" aria-labelledby="education-title">
+
 			<div className="education-section__heading">
-				<p className="eyebrow">Education</p>
-				<h2 id="education-title">Portland State University</h2>
+				<h2 className="eyebrow" id="education-title">
+					Education
+				</h2>
 			</div>
 
 			<div className="education-section__content">
+				<h3 className="education-section__university">
+					Portland State University
+				</h3>
 				<div className="education-section__degree">
 					<h3>M.S. Computer Science</h3>
 					<p>Expected June 2027</p>

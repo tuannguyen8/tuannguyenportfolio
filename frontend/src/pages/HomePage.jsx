@@ -13,37 +13,60 @@ export default function HomePage() {
 
 	return (
 		<>
-			<section className="hero" aria-labelledby="hero-title">
-				<p className="eyebrow">Software engineer / Portland, Oregon</p>
+      <section
+        className="hero"
+        id="top"
+        aria-labelledby="hero-title"
+      >
+        <div className="hero__content">
+          <p className="eyebrow">
+            Software engineer / Portland, Oregon
+          </p>
 
-				<h1 id="hero-title">
-					Building things
-					<br />
-					<em>that work.</em>
-				</h1>
+          <h1 id="hero-title">
+            Building things
+            <br />
+            <em>that work.</em>
+          </h1>
 
-				<p className="hero__description">
-					Web applications, APIs, and automation — built with care.
-				</p>
+          <p className="hero__description">
+            Web applications, APIs, and automation — built with care.
+          </p>
 
-				{/* <a className="button" href="#projects">
-					View selected work <span aria-hidden="true">↘</span>
-				</a> */}
+          <div className="hero__actions">
+            <a className="button" href="#projects">
+              View selected work <span aria-hidden="true">↘</span>
+            </a>
 
-        <div className="hero__actions">
-          <a className="button" href="#projects">
-            View selected work <span aria-hidden="true">↘</span>
-          </a>
+            <a
+              className="hero__resume"
+              href={contact.resumeUrl}
+              download="Tuan_Nguyen_Resume.pdf"
+            >
+              Download resume <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
 
-          <a
-            className="hero__resume"
-            href={contact.resumeUrl}
-            download="Tuan_Nguyen_Resume.pdf"
-          >
-            Download resume <span aria-hidden="true">↗</span>
-          </a>
-        </div>        
-			</section>
+        <div className="hero__artwork">
+          <img
+            src={`${import.meta.env.BASE_URL}img/hero-artwork.png`}
+            alt=""
+            width="1536"
+            height="1024"
+            fetchPriority="high"
+            decoding="async"
+          />
+
+          <p className="hero__motto">
+            <span>Ideas</span>
+            <span>Code</span>
+            <span>People</span>
+            <span>A brighter</span>
+            <span>tomorrow</span>
+          </p>
+        </div>
+      </section>
 
 			<section
 				className="projects-section"

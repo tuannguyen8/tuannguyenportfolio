@@ -50,10 +50,10 @@ export default function Experience() {
       tabIndex={-1}
       aria-labelledby="experience-title"
     >
-      <div className="section-heading">
-        <p className="eyebrow">Experience</p>
-        <h2 id="experience-title">Where I’ve contributed</h2>
-      </div>
+
+      <h2 className="eyebrow experience-section__heading" id="experience-title">
+        Experience
+      </h2>
 
       <div className="experience-section__list">
         {technicalExperience.map((experience, index) => (

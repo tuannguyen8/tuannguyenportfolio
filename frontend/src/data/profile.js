@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Tuan Nguyen',
 
-  photo: `${import.meta.env.BASE_URL}img/profile.jpg`,
+  photo: `${import.meta.env.BASE_URL}img/profile-peach.png`,
 
   introduction:
     'I’m Tuan Nguyen, a software engineer based in Portland, Oregon. I enjoy building web applications and working on both the frontend and backend to make them work well together.',
