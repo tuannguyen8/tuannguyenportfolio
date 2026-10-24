@@ -304,6 +304,7 @@ h3 {
       a {
         font-family: Georgia, 'Times New Roman', serif;
         font-size: 32px;
+        text-decoration: none;
       }
     }
   }
@@ -984,6 +985,22 @@ h3 {
     &__toggle {
       grid-column: 2;
       grid-row: 1 / 4;
+      align-self: center;
+    }
+  }
+
+  .additional-experience__summary {
+    grid-template-columns: minmax(0, 1fr) 24px;
+    padding-block: 20px;
+
+    > span:first-child {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    > .experience-item__toggle {
+      grid-column: 2;
+      grid-row: 1;
       align-self: center;
     }
   }
