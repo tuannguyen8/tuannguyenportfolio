@@ -1727,3 +1727,157 @@ h3 {
 		}
 	}
 }
+
+/* Project details: two-column desktop layout */
+.project-details {
+	display: grid;
+	grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.4fr);
+	grid-template-areas:
+		"back back"
+		"header cover"
+		"overview cover"
+		"links cover"
+		"contributions contributions"
+		"gallery gallery"
+		"navigation navigation";
+	align-items: start;
+	gap: 24px 32px;
+
+	> .back-link {
+		grid-area: back;
+		justify-self: start;
+		margin-bottom: 0;
+		color: var(--color-accent);
+	}
+
+	&__header {
+		grid-area: header;
+		min-width: 0;
+		margin-bottom: 0;
+
+		h1 {
+			margin-block: 12px 16px;
+			font-size: clamp(36px, 4.5vw, 64px);
+			font-weight: 700;
+			line-height: 1;
+			overflow-wrap: normal;
+		}
+	}
+
+	&__description {
+		font-size: 16px;
+		line-height: 1.6;
+	}
+
+	&__overview {
+		grid-area: overview;
+		grid-template-columns: 1fr;
+		gap: 16px;
+		padding-block: 16px;
+		border-color: var(--color-border);
+
+		h2 {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 11px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+		}
+
+		p {
+			font-size: 14px;
+		}
+	}
+
+	&__technologies {
+		gap: 6px;
+
+		li {
+			padding: 4px 8px;
+			border-color: var(--color-border);
+			border-radius: 0;
+			font-size: 12px;
+		}
+	}
+
+	&__links {
+		grid-area: links;
+		margin: 0;
+	}
+
+	&__cover {
+		grid-area: cover;
+		min-width: 0;
+		padding: clamp(16px, 2vw, 28px);
+
+		img {
+			width: 100%;
+			height: auto;
+			max-height: 560px;
+			object-fit: contain;
+		}
+	}
+
+	> .project-image-placeholder {
+		grid-area: cover;
+		min-width: 0;
+	}
+
+	&__contributions {
+		grid-area: contributions;
+		margin: 8px 0 0;
+		padding-top: 24px;
+		border-top: 1px solid var(--color-border);
+
+		h2 {
+			color: var(--color-accent);
+			font-size: 30px;
+		}
+	}
+
+	&__gallery {
+		grid-area: gallery;
+		margin-top: 0;
+	}
+
+	&__navigation {
+		grid-area: navigation;
+		margin-top: 8px;
+	}
+}
+
+@media (max-width: 800px) {
+	.project-details {
+		grid-template-columns: minmax(0, 1fr);
+		grid-template-areas:
+			"back"
+			"header"
+			"overview"
+			"links"
+			"cover"
+			"contributions"
+			"gallery"
+			"navigation";
+		gap: 24px;
+
+		&__header h1 {
+			font-size: clamp(36px, 8vw, 56px);
+		}
+	}
+}
+
+.project-details__screenshots {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 1000px) {
+  .project-details__screenshots {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .project-details__screenshots {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
